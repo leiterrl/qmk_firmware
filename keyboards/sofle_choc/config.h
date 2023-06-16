@@ -19,7 +19,6 @@
 // Wiring of each half
 #define MATRIX_ROW_PINS { C6, D7, E6, B4, B5 }
 #define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
-#define DIODE_DIRECTION COL2ROW
 
 // Encoder support
 #define ENCODERS_PAD_A { F5 }
@@ -28,8 +27,5 @@
 #define ENCODERS_PAD_B_RIGHT { F5 }
 
 #ifdef RGB_MATRIX_ENABLE
-#define WS2812_DI_PIN D3
-#define RGBLED_NUM 29
 #define RGB_MATRIX_LED_COUNT 58
-#define RGB_MATRIX_SPLIT { 29, 29 }
 #endif
