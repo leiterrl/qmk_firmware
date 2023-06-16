@@ -270,7 +270,9 @@ void ws2812_setleds(LED_TYPE* ledarray, uint16_t leds) {
 
     sync_ws2812_transfer();
 
-    for (int i = 0; i < leds; i++) {
+    uint16_t num_leds = MIN(leds, WS2812_LED_COUNT);
+
+    for (int i = 0; i < num_leds; i++) {
 #if defined(RGBW)
         WS2812_BUFFER[i] = rgbw8888_to_u32(ledarray[i].r, ledarray[i].g, ledarray[i].b, ledarray[i].w);
 #else
