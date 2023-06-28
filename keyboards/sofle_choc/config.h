@@ -18,3 +18,9 @@
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
+
+// #define SOFT_SERIAL_PIN D2
+
+// The number of LEDs connected
+#define RGB_MATRIX_LED_COUNT 58
+#define WS2812_DI_PIN D3
